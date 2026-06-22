@@ -1,0 +1,32 @@
+.skills {
+    margin-top: 40px;
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.category {
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #555;
+}

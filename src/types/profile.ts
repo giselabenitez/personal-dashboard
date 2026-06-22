@@ -9,3 +9,11 @@ export type SkillGroup = {
     title: string;
     skills: string[];
 };
+
+export type Project = {
+    title: string;
+    type: "personal" | "case-study";
+    description: string;
+    stack: string[];
+    highlights: string[];
+};

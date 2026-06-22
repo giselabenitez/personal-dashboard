@@ -1,4 +1,4 @@
-import type { Experience } from "../types/profile";
+import type { Experience, Project } from "../types/profile";
 
 export const profile = {
     name: "Gisela Benitez",
@@ -25,6 +25,50 @@ export const experiences: Experience[] = [
             "Angular",
             "TypeScript",
             "Jasmine",
+        ],
+    },
+];
+
+export const skills = {
+    frontend: ["React", "TypeScript", "Angular", "JavaScript", "HTML", "CSS"],
+    backend: ["Node.js", "Java", "Spring Boot"],
+    testing: ["Jest", "Jasmine", "Karma"],
+    tools: ["Git", "GitHub", "CI/CD"],
+};
+
+export const projects: Project[] = [
+    {
+        title: "Personal Dashboard",
+        type: "personal",
+        description: "Interactive portfolio built with React and TypeScript.",
+        stack: ["React", "TypeScript", "Sass"],
+        highlights: [
+            "Component-based architecture",
+            "Responsive layout",
+            "CSS Modules"
+        ],
+    },
+    {
+        title: "Domain Model Editor (Technical Case Study)",
+        type: "case-study",
+        description:
+            "Web-based tool for designing and editing domain models with dynamic UI interactions.",
+        stack: ["React", "TypeScript"],
+        highlights: [
+            "Complex state management",
+            "Interactive UI design",
+            "Architecture decisions"
+        ],
+    },
+    {
+        title: "Landing Page Practice",
+        type: "personal",
+        description: "Simple responsive landing page to practice UI design.",
+        stack: ["React", "CSS"],
+        highlights: [
+            "Responsive design",
+            "Layout system",
+            "UI composition"
         ],
     },
 ];
