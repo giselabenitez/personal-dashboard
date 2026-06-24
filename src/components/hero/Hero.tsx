@@ -1,10 +1,10 @@
-import { profile } from "../../data/profile";
+import { links, profile } from "../../data/profile";
 import styles from "./Hero.module.scss";
 
 export function Hero() {
     return (
         <section className={styles.hero}>
-            <h1 className={styles.title}>
+            <h1 className={styles.name}>
                 {profile.name}
             </h1>
 
@@ -12,14 +12,14 @@ export function Hero() {
                 {profile.role}
             </h2>
 
-            <p className={styles.location}>
+            <p className={styles.meta}>
                 {profile.location}
             </p>
 
             <div className={styles.actions}>
-                <button>Download CV</button>
-                <button>LinkedIn</button>
-                <button>GitHub</button>
+                <a href={links.github}>GitHub</a>
+                <a href={links.linkedin}>LinkedIn</a>
+                <a href={links.email}>Contact</a>
             </div>
         </section>
     );

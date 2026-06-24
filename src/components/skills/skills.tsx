@@ -11,7 +11,7 @@ export function Skills() {
                     <div key={category} className={styles.card}>
                         <h3 className={styles.category}>{category}</h3>
 
-                        <ul className={styles.list}>
+                        <ul className={styles.tech}>
                             {items.map((skill) => (
                                 <li key={skill}>{skill}</li>
                             ))}

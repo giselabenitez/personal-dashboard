@@ -8,9 +8,11 @@ function App() {
   return (
     <Layout>
       <Hero />
-      <Experience />
-      <Skills />
-      <Projects />
+      <div className="container">
+        <Experience />
+        <Skills />
+        <Projects />
+      </div>
     </Layout>
   );
 }

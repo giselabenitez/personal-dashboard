@@ -2,11 +2,21 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     margin: 0;
-    font-family:
-        Inter,
-        system-ui,
-        sans-serif;
-    background: #f5f6f8;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    background: #f6f7fb;
+    color: #111;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }

@@ -6,27 +6,48 @@ export const profile = {
     location: "Valencia, Spain",
 };
 
+export const links = {
+    github: "https://github.com/giselabenitez",
+    linkedin: "https://linkedin.com/in/gisela-benitez",
+    email: "mailto:gisela.m.benitez@gmail.com"
+};
+
 export const experiences: Experience[] = [
     {
         company: "iBOOD",
-        role: "Full Stack Developer - Frontend Focus",
-        period: "2022 - 2025",
+        role: "Full Stack Developer (Frontend Focus)",
+        startDate: "2022-06",
+        endDate: "2025-12",
         highlights: [
-            "React & TypeScript",
-            "E-commerce platform",
-            "CI/CD",
-        ],
+            "Developed and maintained frontend features for a large-scale e-commerce platform using React and TypeScript",
+            "Worked in continuous delivery environment with automated CI/CD pipelines",
+            "Integrated frontend with backend and ERP systems (Java, Python, Odoo)",
+            "Ensured code quality using SonarQube and automated testing pipelines"
+        ]
     },
     {
-        company: "LeArSoft",
+        company: "LeArSoft (Contractor for Equifax)",
         role: "Front End Developer",
-        period: "2020 - 2022",
+        startDate: "2020-02",
+        endDate: "2022-03",
         highlights: [
-            "Angular",
-            "TypeScript",
-            "Jasmine",
-        ],
+            "Re-engineered enterprise system for Equifax using Angular (8–11)",
+            "Implemented unit testing with Jasmine and Karma",
+            "Integrated APIs with Spring Boot and WebFlux backend",
+            "Participated in code reviews and technical standards discussions"
+        ]
     },
+    {
+        company: "LeArSoft (Contractor for Buquebus)",
+        role: "Full Stack Developer",
+        startDate: "2017-04",
+        endDate: "2020-02",
+        highlights: [
+            "Built ticketing system features using JavaScript, jQuery and Java",
+            "Worked with legacy systems and large SQL migrations",
+            "Participated in migration from SVN to GitHub"
+        ]
+    }
 ];
 
 export const skills = {

@@ -1,4 +1,5 @@
 import { experiences } from "../../data/profile";
+import { formatDate } from "../../types/profile";
 import styles from "./Experience.module.scss";
 
 export function Experience() {
@@ -11,7 +12,11 @@ export function Experience() {
                     <article key={exp.company} className={styles.card}>
                         <div className={styles.header}>
                             <h3>{exp.company}</h3>
-                            <span>{exp.period}</span>
+                            <p>
+                                {formatDate(exp.startDate)} - {exp.endDate === "present"
+                                    ? "Present"
+                                    : formatDate(exp.endDate)}
+                            </p>
                         </div>
 
                         <p className={styles.role}>{exp.role}</p>

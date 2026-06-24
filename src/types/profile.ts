@@ -1,7 +1,8 @@
 export type Experience = {
     company: string;
     role: string;
-    period: string;
+    startDate: string; // "YYYY-MM"
+    endDate: string; // "YYYY-MM" | "present"
     highlights: string[];
 };
 
@@ -17,3 +18,14 @@ export type Project = {
     stack: string[];
     highlights: string[];
 };
+
+export function formatDate(date: string) {
+    const [year, month] = date.split("-");
+
+    const months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+
+    return `${months[Number(month) - 1]} ${year}`;
+}

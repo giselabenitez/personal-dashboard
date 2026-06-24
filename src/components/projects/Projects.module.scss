@@ -1,9 +1,6 @@
-.projects {
-    margin-top: 40px;
-}
-
 .title {
     margin-bottom: 16px;
+    font-size: 1.4rem;
 }
 
 .grid {
@@ -13,10 +10,17 @@
 }
 
 .card {
-    padding: 16px;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    background: #fff;
+    background: white;
+    border: 1px solid #eaeaea;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header {
