@@ -1,0 +1,60 @@
+.title {
+    margin-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1.25rem;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    background: #f2f4f7;
+    white-space: nowrap;
+}
+
+.institution {
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.description {
+    margin-top: 0.75rem;
+    color: #444;
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .card {
+        align-items: flex-start;
+    }
+}

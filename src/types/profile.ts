@@ -29,3 +29,15 @@ export function formatDate(date: string) {
 
     return `${months[Number(month) - 1]} ${year}`;
 }
+
+export type Education = {
+    title: string;
+    institution?: string;
+    status: "Completed" | "Currently Studying";
+    description: string;
+};
+
+export type Language = {
+    name: string;
+    level: string;
+};

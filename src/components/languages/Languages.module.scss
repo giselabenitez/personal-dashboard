@@ -1,0 +1,43 @@
+.title {
+    margin-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 1.25rem;
+
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.name {
+    font-weight: 600;
+}
+
+.level {
+    color: #666;
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}

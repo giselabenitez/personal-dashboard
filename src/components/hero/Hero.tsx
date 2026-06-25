@@ -17,8 +17,15 @@ export function Hero() {
             </p>
 
             <div className={styles.actions}>
-                <a href={links.github}>GitHub</a>
-                <a href={links.linkedin}>LinkedIn</a>
+                <a href={links.github} target="_blank">
+                    GitHub
+                </a>
+                <a href={links.linkedin} target="_blank">
+                    LinkedIn
+                </a>
+                <a href="/CV_Gisela_Benitez.pdf" target="_blank">
+                    View CV
+                </a>
                 <a href={links.email}>Contact</a>
             </div>
         </section>

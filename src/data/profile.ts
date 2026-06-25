@@ -1,4 +1,4 @@
-import type { Experience, Project } from "../types/profile";
+import type { Education, Experience, Language, Project } from "../types/profile";
 
 export const profile = {
     name: "Gisela Benitez",
@@ -91,5 +91,33 @@ export const projects: Project[] = [
             "Layout system",
             "UI composition"
         ],
+    },
+];
+
+export const education: Education[] = [
+    {
+        title: "Advanced Master in Graphic Design and Web Conceptualization (UX/UI)",
+        status: "Currently Studying",
+        description:
+            "Focused on UX/UI Design, visual communication, branding, typography and user-centered design.",
+    },
+    {
+        title: "Higher Technician in Software Development",
+        institution:
+            "Instituto Superior Tecnológico Empresarial Argentino",
+        status: "Completed",
+        description:
+            "Foundation in software development, software engineering and web technologies.",
+    },
+];
+
+export const languages: Language[] = [
+    {
+        name: "Spanish",
+        level: "Native",
+    },
+    {
+        name: "English",
+        level: "Professional Working Proficiency",
     },
 ];
