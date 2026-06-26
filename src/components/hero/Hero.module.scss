@@ -36,8 +36,10 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     text-decoration: none;
+    color: inherit;
+    transition: color var(--transition);
 }
 
 .actions a:hover {
-    background: #f5f5f5;
+    color: var(--accent);
 }

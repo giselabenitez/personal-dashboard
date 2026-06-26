@@ -9,15 +9,18 @@
 }
 
 .card {
-    padding: 1.25rem;
-    border: 1px solid #eaeaea;
-    border-radius: 12px;
-    background: white;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
 }
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-md);
 }
 
 .header {
