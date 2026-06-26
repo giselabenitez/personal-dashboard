@@ -1,11 +1,10 @@
 import { education } from "../../data/profile";
+import { Section } from "../section/Section";
 import styles from "./Education.module.scss";
 
 export function Education() {
     return (
-        <section className={styles.education}>
-            <h2 className={styles.title}>Education</h2>
-
+        <Section title="Education" id="education">
             <div className={styles.list}>
                 {education.map((item) => (
                     <article
@@ -32,6 +31,6 @@ export function Education() {
                     </article>
                 ))}
             </div>
-        </section>
+        </Section>
     );
 }

@@ -1,11 +1,10 @@
 import { projects } from "../../data/profile";
+import { Section } from "../section/Section";
 import styles from "./Projects.module.scss";
 
 export function Projects() {
     return (
-        <section className={styles.projects}>
-            <h2 className={styles.title}>Projects</h2>
-
+        <Section title="Projects" id="projects">
             <div className={styles.grid}>
                 {projects.map((project) => (
                     <article key={project.title} className={styles.card}>
@@ -27,6 +26,6 @@ export function Projects() {
                     </article>
                 ))}
             </div>
-        </section>
+        </Section>
     );
 }

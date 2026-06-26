@@ -1,11 +1,10 @@
 import { languages } from "../../data/profile";
+import { Section } from "../section/Section";
 import styles from "./Languages.module.scss";
 
 export function Languages() {
     return (
-        <section className={styles.languages}>
-            <h2 className={styles.title}>Languages</h2>
-
+        <Section title="Languages" id="languages">
             <div className={styles.list}>
                 {languages.map((language) => (
                     <article
@@ -22,6 +21,6 @@ export function Languages() {
                     </article>
                 ))}
             </div>
-        </section>
+        </Section>
     );
 }

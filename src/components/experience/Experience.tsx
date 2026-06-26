@@ -1,12 +1,11 @@
 import { experiences } from "../../data/profile";
 import { formatDate } from "../../types/profile";
+import { Section } from "../section/Section";
 import styles from "./Experience.module.scss";
 
 export function Experience() {
     return (
-        <section className={styles.experience}>
-            <h2 className={styles.title}>Experience</h2>
-
+        <Section title="Experience" id="experience">
             <div className={styles.list}>
                 {experiences.map((exp) => (
                     <article key={exp.company} className={styles.card}>
@@ -29,6 +28,6 @@ export function Experience() {
                     </article>
                 ))}
             </div>
-        </section>
+        </Section>
     );
 }

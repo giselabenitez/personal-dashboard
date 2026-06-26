@@ -1,11 +1,10 @@
 import { skills } from "../../data/profile";
+import { Section } from "../section/Section";
 import styles from "./Skills.module.scss";
 
 export function Skills() {
     return (
-        <section className={styles.skills}>
-            <h2 className={styles.title}>Skills</h2>
-
+        <Section title="Skills" id="skills">
             <div className={styles.grid}>
                 {Object.entries(skills).map(([category, items]) => (
                     <div key={category} className={styles.card}>
@@ -19,6 +18,6 @@ export function Skills() {
                     </div>
                 ))}
             </div>
-        </section>
+        </Section>
     );
 }
