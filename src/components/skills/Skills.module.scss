@@ -9,32 +9,23 @@
     gap: 16px;
 }
 
-.card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition);
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-}
-
 .category {
     margin-bottom: 8px;
     text-transform: capitalize;
     font-weight: 600;
 }
 
-.tech {
-    display: inline-block;
-    padding: 4px 8px;
-    margin: 4px 4px 0 0;
-    border-radius: 6px;
-    background: #f3f4f6;
-    font-size: 12px;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.skills span {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
 }

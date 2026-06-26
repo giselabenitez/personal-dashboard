@@ -1,4 +1,5 @@
 import { education } from "../../data/profile";
+import { Card } from "../card/Card";
 import { Section } from "../section/Section";
 import styles from "./Education.module.scss";
 
@@ -7,9 +8,8 @@ export function Education() {
         <Section title="Education" id="education">
             <div className={styles.list}>
                 {education.map((item) => (
-                    <article
+                    <Card
                         key={item.title}
-                        className={styles.card}
                     >
                         <div className={styles.header}>
                             <h3>{item.title}</h3>
@@ -28,7 +28,7 @@ export function Education() {
                         <p className={styles.description}>
                             {item.description}
                         </p>
-                    </article>
+                    </Card>
                 ))}
             </div>
         </Section>

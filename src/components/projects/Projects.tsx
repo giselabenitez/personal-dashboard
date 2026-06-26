@@ -1,4 +1,5 @@
 import { projects } from "../../data/profile";
+import { Card } from "../card/Card";
 import { Section } from "../section/Section";
 import styles from "./Projects.module.scss";
 
@@ -7,7 +8,7 @@ export function Projects() {
         <Section title="Projects" id="projects">
             <div className={styles.grid}>
                 {projects.map((project) => (
-                    <article key={project.title} className={styles.card}>
+                    <Card key={project.title} className={styles.projectCard}>
                         <h3>{project.title}</h3>
 
                         <p>{project.description}</p>
@@ -23,7 +24,7 @@ export function Projects() {
                                 <li key={h}>{h}</li>
                             ))}
                         </ul>
-                    </article>
+                    </Card>
                 ))}
             </div>
         </Section>

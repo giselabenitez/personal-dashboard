@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     background: var(--background);
@@ -17,10 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-section {
-    margin-block: 5rem;
 }
 
 h1,
